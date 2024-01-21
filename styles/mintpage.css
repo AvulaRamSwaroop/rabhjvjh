@@ -1,0 +1,29 @@
+h1{
+  background: linear-gradient(red,blue,green);
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: block;
+}
+h2{
+  margin-top: 40px;
+ 
+ color: yellow;
+}
+
+#myfileInput{
+  background-color: green;
+  font-size: 16px;
+   padding: 4px;
+  margin-top: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.mint-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center   ;
+  padding-bottom: 40px;
+}
+

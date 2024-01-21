@@ -1,0 +1,104 @@
+.links{
+  background-color: rgb(30,29,29);
+  color: white;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  height: 180px;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.links-left{
+  flex: 1;
+  display: inline-block;
+ 
+}
+@media(max-width: 300px){
+  .links-left{
+    display: block;
+  }
+}
+.stay{
+  font-size: 16px;
+  font-weight: bold;
+}
+.links-leftinput{
+  display: flex;
+  flex-direction: row;
+}
+.links-leftinput input{
+  height: 36px;
+ flex: 1;
+  background-color: transparent;
+  color: rgb(194, 191, 191);
+  border-radius: 12px;
+  border: 1px solid rgb( 60,60,60);
+  max-width: 800px;
+}
+
+.links-leftinput input:hover{
+  border-color: rgb( 100,100,100);
+}
+.links-leftinput input::placeholder{
+  font-size: 14px;
+  padding-left: 12px;
+
+} 
+.links-leftinput button{
+  background-color: rgb(41, 157, 225);
+  border: none;
+  border-radius: 12px;
+  margin-left: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.links-right{
+  margin-left: 20px;
+  width: 360px;
+  align-items: center;
+   display: inline-block;
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+}
+
+.links-right button img{
+  width: 40px; 
+  border-radius: 40px;
+}
+
+.links-right button{
+  margin-top: 12px;
+  background-color:  transparent;
+ height:50px;
+ display: inline-block;
+  border: 1px solid rgb( 100,100,100);
+ margin-right: 10px;
+ cursor: pointer;
+
+}
+.links-right div{
+  display: inline-block;
+}
+ 
+.links-leftinput button:hover{
+ background-color: rgb(68, 180, 224)
+}
+
+
+
+.links-right button:hover{
+  background-color: rgb(23, 162, 216) ;
+}
+ 
+.links-right div a{
+  color: none;
+  text-decoration: none;
+}

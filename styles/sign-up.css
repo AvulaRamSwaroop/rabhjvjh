@@ -1,0 +1,78 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+font-size: 16px;
+   background: linear-gradient( red,blue,green);
+   color: white;
+}
+
+.mid-page-content{ 
+  margin-top: 170px;
+  padding : 12px ;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(100,100,100);
+}
+ 
+.welcome{
+  font-size: 20px;
+  margin: 12px 0;
+}
+input{
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid rgb(50,50,50);
+  height: 30px;
+  width: 300px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  
+}
+input:hover{
+   border: 1px solid rgb(100,100,100);
+}
+button{
+  border: none;
+   border-radius: 4px;
+   padding: 8px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-weight: 550;
+ font-size: 14px;
+ background-color: rgb(3, 10, 143);
+ color: white;
+ transition: all ease 1s;
+}
+ 
+input::placeholder{
+  padding-left: 12px;
+  font-size: 14px;
+ color: white;
+}
+input:active::placeholder {
+  border: none;
+}
+
+ body{
+  height: 100%;
+  width:  100%;
+  background-image: url(https://img.freepik.com/free-vector/gradient-cyber-futuristic-background_23-2149117429.jpg?t=st=1705237023~exp=1705237623~hmac=fd21591949e2252a7f83650f864c0b784b503ff0da41237e6e992a6c24fa2926);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.text{
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+.text a{
+  color: rgb(0, 238, 255);
+}
+button:active{
+  scale: 0.6;
+}

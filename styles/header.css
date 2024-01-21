@@ -1,0 +1,281 @@
+.header{
+  background-color: rgb( 30,30,30);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 10px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 72px;
+  border-bottom: 1px solid rgb( 100,100,100);
+  color: white;
+  font-family: Roboto,Arial;
+  font-size: 16px;
+  z-index: 200;
+}
+
+.left-section{
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+  align-items: center;
+  justify-content: space-between;
+ padding-right: 20px;
+   border-right: 1px solid rgb( 100,100,100);
+   height: 36px;
+}
+.opensea-logo{
+  display: inline-block;
+  width: 40px;
+  border-radius: 40px;
+}
+.opensea-text{
+  width: 96px;
+  display: inline-block;
+  border-radius: 0px;
+}
+.middle-section{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  align-items: center;
+  font-weight: bold;
+}
+.middle-left{
+  display: flex;
+  width: 210px;
+  align-items: center;
+  justify-content: space-between;
+   
+}
+.middle-left div{
+display: inline-block;
+}
+
+.middle-right{
+  flex: 1;
+ margin-left: 20px;
+ position: relative;
+ width: 0;
+}
+.search-box{
+  height: 40px;
+  background-color: rgb(50,50,50);
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+}
+.search-box::placeholder{
+  padding-left: 12px;
+  font-size: 16px;
+  color: lightgray;
+}
+.middle-right div{
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+ 
+  right: 0px;
+  font-size: 20px;
+  top: 0;
+  padding-top: 8px;
+ 
+}
+
+.right-section{
+ 
+  width: 190px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    margin-left: 15px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.profile,.cart
+  {
+  width: 20px;
+  height: 20px;
+}
+
+.login-button{
+  background-color: rgb(50,50,50);
+  color: white;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+  font-family: Roboto,Arial;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  transition: all ease 0.4s;
+};
+ 
+.profile-container{
+  background-color: rgb(50,50,50);
+  width: 56px;
+   height: 40px;
+  
+}
+.profile{
+  border-radius: 20px;
+}
+
+.cart-container{
+ position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ background-color: rgb(50,50,50);
+ border-radius: 4px;
+}
+
+
+.cart-number{
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background-color: rgb(35, 109, 12);
+  font-size: 16px;
+  padding: 2px 6px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.cart{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+.cart-logo-container{
+  margin-right: 6px;
+}
+
+.cart-text{
+  font-weight: bold;
+  font-family: Roboto,Arial;
+  font-size: 16px;
+  margin-right: 4px;
+
+}
+ 
+.cart-container,.search-box,.login-button,.middle-left div,.profile-container{
+  cursor: pointer;
+}
+
+.cart-container:hover,.search-box.search-box:hover,.login-button:hover{
+  background-color: rgb( 100,100,100);
+ 
+}
+ .create:hover{
+   color:rgb(200, 200, 200);
+ }
+
+.cart-container{
+  transition: all ease 0.5s;
+}
+
+.login-button:active,.cart-container:active{
+  scale: 0.8;
+}
+
+.drops,.stats{
+  position: relative;
+ 
+}
+.drops-op,.stats-op{
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 150px;
+  border-radius: 12px;
+  padding-top: 12px;
+  background-color: rgb(60,60,60);
+  pointer-events: none; 
+  opacity: 0;
+}
+.drops-op div,.stats-op div{
+  margin-bottom: 20px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.drops:hover,.stats:hover{
+  .drops-op,.stats-op{
+    color: rgb(250,250,250);
+    opacity: 1;
+  }
+ 
+  color:rgb(200, 200, 200) ;
+}
+ 
+
+
+
+.toggle-button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.is-toggled {
+  background-color: white;
+  color: black;
+}
+
+
+.profile-container:hover{
+  .profile-op{
+    opacity: 1;
+  } 
+}
+
+
+.profile-container{
+  position: relative;
+}
+.profile-op{
+position: absolute;
+right: 0px;
+font-size: 16px;
+font-weight: bolder;
+padding-top: 10px;
+padding-left: 10px;
+top: 40px;
+background-color: rgb(60,60,60);
+width: 140px;opacity: 1;
+height: 586px;
+border-radius: 12px;
+opacity: 0;
+pointer-events: none;
+transition: all ease 0.5s;
+}
+
+.pro,.deal,.set,.lea{
+align-items: center;
+
+margin-bottom: 17px;
+border-bottom: 1px solid rgb(100,100,100);
+}
+
+.search-box{
+  color: white;
+}
+
+.pro div,.deal div,.set div,.lea div{
+margin-bottom: 20px;
+
+padding-bottom: 10px;
+cursor: pointer;
+padding-left: 12px;
+padding-top: 10px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon_image.png" type="image/icon type">
+    <title>NFT MarketPlace</title>
+    <link rel="stylesheet" href="styles/sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+       
+        <div class="nameIMG"></div>
+    </div>
+
+    <div class="page-background"></div>
+    <div class="page-shadow"></div>
+    <div class="mid-page-content">
+    
+        <div class="welcome">Welcome!</div>
+
+        <div id="form" class="Log-in">
+            <form id="loginFrom">
+                <div class="inputs">
+                    <input class="login-email" type="email" placeholder="Enter Your Email">
+                    <input class="login-password" type="password" placeholder="Enter Your Password">
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Log-in</button>
+                </div>
+                <div class="text">Do not have a account? <a class="signupBTN" href="sign-up.html">Create Account</a> </div>
+        
+            </form>
+        </div>
+
+           
+    </div>
+
+<script type="module">
+     
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+    import { getAuth,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+ 
+    const firebaseConfig = {
+  apiKey: "AIzaSyAKhVeVt9IP1AIm_tyFNxlfcAR0JKwImfg",
+  authDomain: "nft-marketplace-10109.firebaseapp.com",
+  databaseURL: "https://nft-marketplace-10109-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "nft-marketplace-10109",
+  storageBucket: "nft-marketplace-10109.appspot.com",
+  messagingSenderId: "897070268572",
+  appId: "1:897070268572:web:ac1b1d686b1b6862932d59"
+};
+  
+ 
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase();
+  const auth = getAuth();
+  const dbref = ref(db);
+  
+  
+  let emailinp = document.querySelector('.login-email');
+  let passwordinp = document.querySelector('.login-password')
+  let mainform = document.getElementById('loginFrom')
+  
+ 
+
+
+  let SignInUser = evt => {
+    evt.preventDefault();
+
+    signInWithEmailAndPassword(auth,emailinp.value,passwordinp.value)
+    .then((credentials)=>{
+      console.log(credentials.user);
+      window.localStorage.setItem("user-id" , String(credentials.user.uid))
+      
+      get(child(dbref,`Users/` +credentials.user.uid )).then((snapshot)=>{
+        if(snapshot.exists){
+          sessionStorage.setItem("user-info", JSON.stringify({
+            firstname: snapshot.val().firstname,
+            lastname:snapshot.val().lastname
+          }))
+          sessionStorage.setItem("user-creds",JSON.stringify(credentials.user))
+          window.location.href = 'index.html';
+        }
+      })
+    })
+    .then(()=>{
+      alert("Let's Explore the World of Nft's")
+    })
+    .catch((error)=>{
+      alert(error.message)
+      console.log(error.code);
+      console.log(error.message);
+    })
+
+  }
+  mainform.addEventListener('submit', SignInUser )
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+.foot{
+   position: static;
+   bottom: 0px;
+   height: 60px;
+   right: 0;
+   left: 0;
+    background-color: rgb(30, 29, 29);
+   color: white;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   position: relative;
+   border-top: 1px solid  white;
+   padding-left: 12px;
+   font-size: 14px;
+ }
+
+ .policy:hover,.terms:hover{
+    font-size: 15px;
+ }
+ 
+
+ .copyright{
+  flex: 1;
+ }
+ .foot-right{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+ right: 0;
+  width: 260px;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-right: 12px;
+ }
+ 
+ .foot-right div{
+  cursor: pointer;
+ }
+
+ .footer{
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+   background-color: rgb(30, 29, 29);
+   color: white;
+  height: 640px;
+  padding-left: 12px;
+ 
+  padding-top: 60px;
+  border-top: 1px solid rgb(60,60,60);
+ }
+ .footer-left{
+   width: 300px;
+   
+ }
+ .opensea-foot{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+ }
+ .opensea-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+   height: 70px;
+   display: inline-block;
+ }
+ .about{
+  margin-top: 10px;
+    line-height: 22px;
+ } 
+
+ .footer-right{
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+
+ .MarketPlace{
+  font-size: 20px;
+ }
+ .marketplace,.learn,.resources,.myaccount{
+ flex: 1;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  justify-content:  top;
+   vertical-align: top;
+   flex-shrink: 0;
+ }
+ .marketplace div{
+  margin-bottom: 16px;
+ }
+
+ .MyAccount,.Resources,.Learn{
+  font-size: 20px;
+ }
+ .myaccount{
+  display: inline-block;
+ 
+  flex-direction: column;
+  justify-content: top;
+ }
+ .myaccount div{
+  margin-bottom: 16px;
+ }
+
+ .resources div,.learn div{
+  margin-bottom: 16px;
+ }
+ .resources{
+  display: inline-block;
+  justify-content: top;
+  vertical-align: top;
+  flex-direction: column;
+ }
+ 
+ .footer-right div div{
+  cursor: pointer;
+ }
+ .footer-right div div:hover{
+  font-size: 17px;
+ }
+
+ .Learn{
+  cursor: none;
+ }
+
+ .learn a,.foot-right div a,.resources div a{
+  color: white;
+          text-decoration: none;
+ }
+

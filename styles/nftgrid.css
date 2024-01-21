@@ -1,0 +1,235 @@
+.nftgrid{
+  color: white;
+  background-color: rgb(30,30,30);
+
+   padding-left: 20px;
+}
+.gridheader{
+ height: 50px;
+ border-bottom: 1px solid rgb(100,100,100);
+ padding-top: 20px;
+ display: flex;
+ flex-direction: row;
+ position: static;
+}
+
+ 
+
+.gridheader div{
+   cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+   border:1px solid rgb(100,100,100);
+  width: fit-content;
+  border-radius: 12px;
+  height: 24px;
+  padding: 5px 12px;
+  justify-content: center;
+   vertical-align: middle;
+   transition: all ease 0.3s}
+
+.notablecollections{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgreen;
+  border-bottom: fixed;
+}
+.notablecollections-nfts{
+   display: grid ;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 20px;
+   row-gap: 12px;
+}
+  .Notable-Collections {
+    padding: 12px 12px 15px 6px;
+    font-size: 20px;
+  
+  }
+  .image-ape{
+    height: 180px;
+  }
+ .image,.image-ape{
+   width:  100%;
+   border-top-right-radius: 12px;
+   border-top-left-radius: 12px;
+ }
+
+ .notablecollections-nft{
+ display: inline-block;
+  background-color : rgb(60,60,60);
+  border-radius: 10px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+ }
+
+ @media(max-width: 600px){
+  .notablecollections-nfts{
+    grid-template-columns: 1fr 1fr;
+  }}
+
+  @media(min-width: 601px) and (max-width: 900px ){
+    .notablecollections-nfts{
+      grid-template-columns: 1fr 1fr 1fr;
+    }}
+
+    @media(min-width: 901px) and (max-width: 1200px ){
+      .notablecollections-nfts{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }}
+
+      @media(min-width: 1201px) {
+        .notablecollections-nfts{
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }}
+
+  .nft-description{
+   
+    padding: 0px 15px;
+    padding-top: 5px;
+     
+  }
+  .FIFA{
+    padding: 0;
+     margin: 0;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 10px;
+ font-size: 20px;
+  }
+ 
+
+  .bluetick{
+    width: 20px;
+    padding-top: 12px;
+   margin-top: 0px;
+   margin-left: 5px;
+   border-radius: 60px;
+   border-top-right-radius: 30px;
+    display: inline-block;
+     vertical-align: top;
+  }
+  .nft-stats{
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+    justify-content: space-between;
+  }
+ 
+  .Floor,.Total-Volume{
+    color: rgb(140,140,140);}
+
+  .MATIC,.ETH{
+    font-weight: bolder;
+  }
+
+  .categories{
+    height: 30px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .notablecollections-nft{
+    cursor: pointer;
+  }
+
+  .footer-right  div p{
+   
+    font-size: 20px;
+
+  }
+
+
+
+
+.lea{
+  border-bottom: none;
+}
+
+
+
+
+
+.image-container img{
+  object-fit: cover;
+  transition: all ease 1s;
+}
+.image-container{
+  overflow: hidden;
+}
+
+.image-container:hover img{
+  scale: 1.2;
+}
+
+ 
+.gridheader div:active{
+   scale: 0.8;
+}
+ 
+
+
+
+.categories-image-container img{
+  height: 100%;
+  width: 100%;
+ }
+ .categories-image-container{
+  position: relative;
+ overflow: hidden;
+ }
+
+ .categories-image-container div{ 
+ 
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom: -50%;
+  background: linear-gradient(transparent,blue);
+  transition: all ease 0.5s;
+ }
+ .categories-image-container:hover div{
+     bottom: 0;
+ }
+
+
+.jx{
+  overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+ }
+ 
+
+ .addbuttonhome{
+   background-color: rgb(38, 109, 239);
+   border: none;
+   width: 100%;
+   height: 10%;
+   font-size: 16px;
+   color: white;
+   font-weight: bold;
+   opacity: 0;
+   cursor: pointer;
+   transition: opacity 0.8s, scale 1s;
+   border-radius: 8px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+ .notablecollections-nft:hover{
+  .addbuttonhome{
+    opacity: 1;
+  }
+ }
+
+ .addbuttonhome:active{
+  scale: 0.6;
+
+ }
+
+.js-button-1{
+  background-color: white;
+  color: black;
+}
