@@ -1,4 +1,4 @@
-let cartquantity = document.querySelector(".cart-number");
+/*let cartquantity = document.querySelector(".cart-number");
  
 let addbutton1= document.querySelector(".js-add-1");
  addbutton1.addEventListener("click",() => {
@@ -176,4 +176,4 @@ html();
  })
 
 
-  
+  */
